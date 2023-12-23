@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "wrangler pages dev dist"
+    "dev": "wrangler pages dev dist --d1 BOOKSTORE_DB=882d7d9f-35ca-4bfb-9943-6757aa57b4d7"
   },
   "repository": {
     "type": "git",
