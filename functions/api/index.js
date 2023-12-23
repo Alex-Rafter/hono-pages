@@ -1,5 +1,5 @@
 export async function onRequest(context) {
-    const ps = context.env.BOOKSTORE.prepare('SELECT * from books');
+    const ps = context.env.BOOKSTORE.prepare('SELECT * FROM tablename;');
     const data = await ps.first();
-    return Response.json(data);
+    return new Response.json(data);
 }
